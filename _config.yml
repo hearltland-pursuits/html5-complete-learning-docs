@@ -1,0 +1,182 @@
+# Jekyll Configuration for HTML5 Complete Learning Documentation
+# GitHub Pages Theme: Just the Docs
+
+# Theme
+remote_theme: just-the-docs/just-the-docs
+
+# Site Settings
+title: "HTML5 Complete Learning Documentation"
+description: "Comprehensive HTML5 reference for Cloud Infrastructure Engineers - 95+ topics covering modern web development standards"
+baseurl: "" # Leave empty if using custom domain or username.github.io
+url: "https://hearltland-pursuits.github.io"
+
+# Author
+author:
+  name: "Joshua P. Hickman"
+  email: "joshua@example.com"
+
+# Search
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+# Color Scheme
+color_scheme: light
+
+# Aux Links (top right navigation)
+aux_links:
+  "View on GitHub":
+    - "https://github.com/hearltland-pursuits/html5-complete-learning-docs"
+  "CSS Documentation":
+    - "https://github.com/hearltland-pursuits/koder"
+
+# Footer Content
+footer_content: "© 2025 Joshua P. Hickman. All rights reserved. | Created with assistance from Claude Code | Part of Cloud Infrastructure Engineer Bootcamp"
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Exclude files from build (planning/internal docs)
+exclude:
+  - BATCH_*.md
+  - SESSION_*.md
+  - PROGRESS.md
+  - "*_TEMPLATE.md"
+  - "*_HANDOFF.md"
+  - "*_PLAN.md"
+  - "*_GUIDE.md"
+  - "*.sh"
+  - .gitignore
+  - README_TEMPLATE.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Collections (optional - for organizing docs)
+collections:
+  fundamentals:
+    output: true
+  text-content:
+    output: true
+  links-navigation:
+    output: true
+  media-elements:
+    output: true
+  lists-tables:
+    output: true
+  forms-input:
+    output: true
+  semantic-html5:
+    output: true
+  metadata-seo:
+    output: true
+  global-attributes:
+    output: true
+  graphics-canvas:
+    output: true
+  html5-apis:
+    output: true
+  multimedia-embedding:
+    output: true
+  accessibility:
+    output: true
+  modern-html5:
+    output: true
+
+# Defaults for front matter
+defaults:
+  - scope:
+      path: "01-fundamentals"
+    values:
+      layout: "default"
+      parent: "Fundamentals"
+  - scope:
+      path: "02-text-content"
+    values:
+      layout: "default"
+      parent: "Text Content Elements"
+  - scope:
+      path: "03-links-navigation"
+    values:
+      layout: "default"
+      parent: "Links & Navigation"
+  - scope:
+      path: "04-media-elements"
+    values:
+      layout: "default"
+      parent: "Media Elements"
+  - scope:
+      path: "05-lists-tables"
+    values:
+      layout: "default"
+      parent: "Lists & Tables"
+  - scope:
+      path: "06-forms-input"
+    values:
+      layout: "default"
+      parent: "Forms & Input"
+  - scope:
+      path: "07-semantic-html5"
+    values:
+      layout: "default"
+      parent: "Semantic HTML5"
+  - scope:
+      path: "08-metadata-seo"
+    values:
+      layout: "default"
+      parent: "Metadata & SEO"
+  - scope:
+      path: "09-global-attributes"
+    values:
+      layout: "default"
+      parent: "Global Attributes"
+  - scope:
+      path: "10-graphics-canvas"
+    values:
+      layout: "default"
+      parent: "Graphics & Canvas"
+  - scope:
+      path: "11-html5-apis"
+    values:
+      layout: "default"
+      parent: "HTML5 APIs"
+  - scope:
+      path: "12-multimedia-embedding"
+    values:
+      layout: "default"
+      parent: "Multimedia & Embedding"
+  - scope:
+      path: "13-accessibility"
+    values:
+      layout: "default"
+      parent: "Accessibility"
+  - scope:
+      path: "14-modern-html5"
+    values:
+      layout: "default"
+      parent: "Modern HTML5 Best Practices"
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-include-cache
+
+# Markdown
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Permalinks
+permalink: pretty

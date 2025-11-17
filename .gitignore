@@ -1,0 +1,42 @@
+# Planning and Template Files (exclude from GitHub Pages)
+BATCH_*.md
+SESSION_*.md
+PROGRESS.md
+*_TEMPLATE.md
+*_HANDOFF.md
+*_PLAN.md
+*_GUIDE.md
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS Files
+Thumbs.db
+Desktop.ini
+
+# Jekyll Build Files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Node Modules (if using npm for any tooling)
+node_modules/
+package-lock.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment Files
+.env
+.env.local
+
+# Temporary Files
+*.tmp
+*.temp
